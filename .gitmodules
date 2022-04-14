@@ -1,0 +1,6 @@
+[submodule "vendor/bmake"]
+	path = vendor/bmake
+	url = https://github.com/Agnes-os/bmake
+[submodule "vendor/fasmg"]
+	path = vendor/fasmg
+	url = https://github.com/Agnes-os/fasmg
