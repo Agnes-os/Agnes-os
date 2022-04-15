@@ -1,14 +1,16 @@
-CC 		 	= 	clang
+#CC 		 	= 	clang
 CFLAGS		?= 	-fno-stdlib -m32 -Wall -Wextra -pedantic -O2 -ffreestanding
 LDFLAGS 	?= 	-T linker.ld
 AS		 	= 	fasmg
 ASFLAGS		?=  -n
-MAKE		?=	bmake
+#MAKE		?=	bmake
 
 COBJS		=
 ASOBJS		=	multiboot.o
 
-INCLUDE		!=	echo `pwd`/../vendor/fasmg/core/examples/x86/include
+ROOTDIR     != echo `pwd`/..
+INCLUDE		=  $(ROOTDIR)/vendor/fasmg/core/examples/x86/include
+
 
 kernel: boot
 
