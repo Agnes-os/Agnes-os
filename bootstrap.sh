@@ -45,6 +45,10 @@ build_vendor () {
 	fi
 }
 
+fetch_submodules() {
+    git submodule update --init --recursive
+}
+
 
 build_ready () {
 	echo ""
@@ -61,6 +65,7 @@ build_ready () {
 }
 
 run () {
+    fetch_submodules
 	build_vendor
 	create_builder
 	build_ready
