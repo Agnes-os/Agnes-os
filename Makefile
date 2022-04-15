@@ -12,6 +12,6 @@ vendor:
 
 distclean: clean
 	rm -rf .build
+	rm -f build
 
 clean:
-	(cd vendor; $(MAKE) clean)
