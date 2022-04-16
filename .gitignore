@@ -3,4 +3,5 @@
 .vscode
 .build
 build
+*.o
 

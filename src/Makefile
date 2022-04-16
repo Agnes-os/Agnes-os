@@ -6,7 +6,7 @@ ASFLAGS		?=  -n
 #MAKE		?=	bmake
 
 COBJS		=
-ASOBJS		=	multiboot.o
+ASOBJS		=	multiboot.o stack.o
 
 ROOTDIR     != echo `pwd`/..
 INCLUDE		=  $(ROOTDIR)/vendor/fasmg/core/examples/x86/include
