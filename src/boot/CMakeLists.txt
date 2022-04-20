@@ -7,5 +7,11 @@ ENABLE_LANGUAGE(ASM_FASMG)
 
 set(ENV{INCLUDE} "${CMAKE_SOURCE_DIR}/vendor/fasmg/packages/x86/include")
 message("$ENV{INCLUDE}")
-add_library(boot multiboot.asm)
+
+add_library(boot
+    multiboot.asm
+    stack.asm
+    main.asm
+)
+
 SET_TARGET_PROPERTIES(boot PROPERTIES PREFIX "")
