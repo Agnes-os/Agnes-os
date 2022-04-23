@@ -7,5 +7,5 @@ section '.bss' writeable align 16
 public stack_begin
 
 stack_end:
-dd 256 dup(0) ; 1K, Stack depth: 256
+db 16384 dup(0) ; 16K
 stack_begin:
