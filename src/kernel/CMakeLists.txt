@@ -1,0 +1,5 @@
+set(LINKER_SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/link.ld")
+set(CMAKE_EXE_LINKER_FLAGS "-T ${LINKER_SCRIPT}")
+add_executable(kernel.bin main.c)
+set(CMAKE_C_FLAGS "-g -m32 -O2 -nostdlib -ffreestanding -Wall -Wextra -pedantic")
+target_link_libraries(kernel.bin boot)

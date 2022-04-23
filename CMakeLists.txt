@@ -5,3 +5,4 @@ PROJECT(agnes)
 
 
 ADD_SUBDIRECTORY(src/boot)
+ADD_SUBDIRECTORY(src/kernel)
